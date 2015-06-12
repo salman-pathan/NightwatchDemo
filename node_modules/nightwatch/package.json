@@ -1,0 +1,76 @@
+{
+  "name": "nightwatch",
+  "description": "A node.js bindings implementation for selenium 2.0/webdriver",
+  "version": "0.6.13",
+  "author": {
+    "name": "Andrei Rusu",
+    "email": "andrei@nightwatchjs.org"
+  },
+  "homepage": "http://nightwatchjs.org",
+  "main": "./lib/index.js",
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/beatfactor/nightwatch/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/beatfactor/nightwatch/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:beatfactor/nightwatch.git"
+  },
+  "dependencies": {
+    "ejs": "~0.8.3",
+    "minimatch": "~0.2.14",
+    "mkpath": ">=0.1.0",
+    "optimist": ">=0.3.5",
+    "q": "^1.1.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "nodeunit": "latest",
+    "jscoverage": "latest",
+    "coveralls": "latest",
+    "jshint": "~2.4.4",
+    "mock-spawn": "^0.2.1",
+    "mockery": "~1.4.0",
+    "jsonlint": "~1.6.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-jsonlint": "~1.0.4",
+    "grunt-complexity": "^0.1.7",
+    "grunt-npm-release": "latest",
+    "nock": "~0.45.0"
+  },
+  "bin": {
+    "nightwatch": "./bin/nightwatch"
+  },
+  "man": "",
+  "scripts": {
+    "jshint": "jshint --verbose --config .jshintrc lib/",
+    "coverage": "jscoverage lib --exclude *.ejs,*.json && NIGHTWATCH_COV=1 node ./tests/run_tests.js lcov > ./lib-cov/lcov.info",
+    "test": "node ./tests/run_tests.js"
+  },
+  "gitHead": "e647ad48158249fbabe742cd084584d04627bf7a",
+  "_id": "nightwatch@0.6.13",
+  "_shasum": "c7168d2deadf466f45b2e4228fcf15fd5d5da532",
+  "_from": "nightwatch@*",
+  "_npmVersion": "2.7.4",
+  "_nodeVersion": "0.12.2",
+  "_npmUser": {
+    "name": "beatfactor",
+    "email": "getintouch@beatfactor.net"
+  },
+  "maintainers": [
+    {
+      "name": "beatfactor",
+      "email": "getintouch@beatfactor.net"
+    }
+  ],
+  "dist": {
+    "shasum": "c7168d2deadf466f45b2e4228fcf15fd5d5da532",
+    "tarball": "http://registry.npmjs.org/nightwatch/-/nightwatch-0.6.13.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nightwatch/-/nightwatch-0.6.13.tgz",
+  "readme": "ERROR: No README data found!"
+}
